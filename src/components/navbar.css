@@ -1,0 +1,15 @@
+.navbar {
+    z-index: 1000;
+    /* background: ; */
+    transition: 0.3s;
+    color: white;
+}
+
+.active , .navbar-btn:hover {
+    color: rgb(35, 113, 201);
+}
+
+.navbar.active-background {
+    /* background: #1f2937; */
+    background: yellowgreen;
+}

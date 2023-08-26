@@ -1,0 +1,41 @@
+.primary-box {
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.border-primary {
+    border-color: rgb(35, 113, 201);
+    z-index: 1;
+}
+
+.primary-box::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: rgb(106, 106, 255); */
+    background: rgb(35, 113, 201);
+    opacity: 15%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.primary-box:hover::before {
+    width: 100%;
+}
+
+.box-bar-line-point::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(35, 113, 201);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: translateX(-31px);
+}

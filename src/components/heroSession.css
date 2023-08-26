@@ -1,0 +1,64 @@
+.text-stroke {
+    color: transparent;
+    -webkit-text-stroke: .7px rgb(0, 119, 255);
+}
+
+.animated-btn {
+    overflow: hidden;
+    color: black;
+    transition: 0.5s;
+    border: 1px solid  rgb(0, 119, 255);
+    z-index: 2;
+}
+
+.animated-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(35, 113, 201);   
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.animated-btn:hover {
+    color: white;
+}
+
+.animated-btn:hover::before {
+    width: 100%;
+}
+
+.link-icon-group {
+    bottom: 100px;
+    left: 0;
+}
+
+.icon-hover-effect {
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.icon-hover-effect:hover {
+    color: white;
+}
+
+.icon-hover-effect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(35, 113, 201);
+    z-index: -1;
+    transition: .5s;
+}
+
+.icon-hover-effect:hover::before {
+    width: 100%;
+}
+
